@@ -1365,18 +1365,22 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
-				<string>CustomOS</string>
+				<string>Windows</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Name</key>
-				<string>CustomOS</string>
+				<string>Windows</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,12-E2-17-44-8B-44-1B-00)/HD(1,GPT,89C0B8B8-DEBE-4688-9762-AE0A719A2975,0x800,0x96000)/\EFI\MicroSoft\Boot\bootmgfw.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
@@ -1400,7 +1404,7 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
-			<integer>983299</integer>
+			<integer>0</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1502,18 +1506,20 @@
 		<true/>
 		<key>Generic</key>
 		<dict>
+			<key>AdviseWindows</key>
+			<true/>
 			<key>MLB</key>
-			<string>C02713300QXF2FRA8</string>
+			<string></string>
 			<key>ROM</key>
-			<data>6emHZRtT</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro14,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02THTY6HV2N</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>E9BE90CD-41D8-4E3D-AA6C-68D9A9651B53</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
