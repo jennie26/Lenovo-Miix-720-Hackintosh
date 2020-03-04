@@ -138,11 +138,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Touch Screen Patch with TSCR to TSCX in patch</string>
+				<string>enable GPIO for I2C</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-TSCR.aml</string>
+				<string>SSDT-OCGPI0-GPEN.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>enable Touch Screen with voodooi2c</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-OC-TSCX.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -585,110 +593,6 @@
 				<data></data>
 				<key>Replace</key>
 				<data>MDFbghdIUlVTCF9BRFIAFAtYUk1WAA==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>(RP05 only) Rename RP05.PXSX to RP05.SDXC and use with SSDT-SDXC.aml for SDXC</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>UlAwNS5QWFNY</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>UlAwNS5TRFhD</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>(RP05 only) Rename RP05PXSX to RP05SDXC and use with SSDT-SDXC.aml for SDXC</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>UlAwNVBYU1g=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>UlAwNVNEWEM=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>(RP05 only) Rename Device(PXSX) to SDXC and use with SSDT-SDXC.aml for SDXC</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>UFhTWAhfQURSABQPX1BSVwCkR1BSVwppCgQULUhQTUUIoCaQkpNWRElEDP////+TUE1TWAGGUFhTWAoCcAFQTVNYcAFQU1BYFA9fUFJXAKRHUFJXCmkKBBQWX1BSVACgClBJQ02kQVIwNKRQUjA0W4JLN1JQMDY=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>U0RYQwhfQURSABQPX1BSVwCkR1BSVwppCgQULUhQTUUIoCaQkpNWRElEDP////+TUE1TWAGGU0RYQwoCcAFQTVNYcAFQU1BYFA9fUFJXAKRHUFJXCmkKBBQWX1BSVACgClBJQ02kQVIwNKRQUjA0W4JLN1JQMDY=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change TSCR to TSCX</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>VFNDUg==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>VFNDWA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
