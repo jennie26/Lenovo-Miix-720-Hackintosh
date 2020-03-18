@@ -34,14 +34,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-SDXC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Notebook brightness</string>
 				<key>Enabled</key>
 				<true/>
@@ -76,7 +68,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-TYPC.aml</string>
 			</dict>
@@ -116,9 +108,9 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>SSDT-OC-XOSI.aml</string>
+				<string>SSDT-OC-SBUS.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -582,7 +574,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>MDFbghdIUlVTCF9BRFIAFAtfUk1WAA==</data>
 				<key>Limit</key>
@@ -942,7 +934,7 @@
 				<key>Comment</key>
 				<string>SMCBatteryManager.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCBatteryManager</string>
 				<key>MaxKernel</key>
@@ -1102,7 +1094,7 @@
 				<key>Comment</key>
 				<string>ACPIBatteryManager.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/ACPIBatteryManager</string>
 				<key>MaxKernel</key>

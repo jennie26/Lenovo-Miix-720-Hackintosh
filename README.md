@@ -12,15 +12,16 @@ BIOS版本：  3SEC71WW （已通过ru.efi关闭CFG Lock）
 
 更改记录：
 
-2020/3/9
+2020/3/18
 
-1.OC下删除SSDT-SDCX.aml及SSDT的注入，事实证明驱动读卡器仅需要d注入Device Properties即可。
-2.电池驱动换回ACPIBatteryManager，暂时实现电量显示。
+1.OC恢复SSDT-TYPE，实现USB-C的热插拔（假热插拔，第一次插入后取下就无法再识别）。
+2.添加SSDT-SBUS。
+3.在第二条基础上，使用SMCBatteryManager已恢复电量、电源显示。
 
 已解决问题：
 1. 随机禁行（添加boot-arg:slide=1后暂未再现，观察）；
-2. 未安装触摸屏补丁（已驱动，注入GPI0及TSCX的SSDT）
-6. 3/16:切换VirtualSMC后，还未能完善电池补丁，电池不显示。(电池换回ACPIBatteryManager，SSDT加入ADP0._STA实现AC插入拔出实时显示。)
+4. 未安装触摸屏补丁（已驱动，注入GPI0及TSCX的SSDT）
+6. 电量、电源显示已修复。
 
 存在问题：
 
