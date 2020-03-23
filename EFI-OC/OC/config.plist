@@ -180,13 +180,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change GFX0 to IGPU</string>
+				<string>change LID0._STA to LID0.XSTA for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>R0ZYMA==</data>
+				<data>FCxfU1RBAA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -194,7 +194,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>SUdQVQ==</data>
+				<data>FCxYU1RBAA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -284,7 +284,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(_BIF,0,N) to XBIF</string>
+				<string>change Method(_BIF,0,N) to XBIF  for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -310,7 +310,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(_BST,0,S) to XBST</string>
+				<string>change Method(_BST,0,S) to XBST  for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -336,7 +336,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(SMTF,1,N) to XMTF</string>
+				<string>change Method(SMTF,1,N) to XMTF for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -362,7 +362,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(SMTE,1,N) to XMTF</string>
+				<string>change Method(SMTE,1,N) to XMTE for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -388,7 +388,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(MHPF,1,N) to XHPF</string>
+				<string>change Method(MHPF,1,N) to XHPF for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -414,7 +414,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(MHIF,1,N) to XHIF</string>
+				<string>change Method(MHIF,1,N) to XHIF for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -440,7 +440,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(GSBI,1,N) to XSBI</string>
+				<string>change Method(GSBI,1,N) to XSBI for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -466,7 +466,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change Method(GBID,0,S) to XBID</string>
+				<string>change Method(GBID,0,S) to XBID for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -492,7 +492,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change BAT0._STA to BAT0.XSTA</string>
+				<string>change BAT0._STA to BAT0.XSTA for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -596,7 +596,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change ADP0._STA to ADP0.XSTA</string>
+				<string>change ADP0._STA to ADP0.XSTA for SSDT-OC-BATT.aml</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -679,6 +679,8 @@
 			<key>ProtectCsmRegion</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
+			<true/>
+			<key>ProtectUefiServices</key>
 			<true/>
 			<key>ProvideCustomSlide</key>
 			<false/>
@@ -1088,22 +1090,6 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>ACPIBatteryManager.kext</string>
-				<key>Comment</key>
-				<string>ACPIBatteryManager.kext</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/ACPIBatteryManager</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -1304,6 +1290,8 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>AppleDebug</key>
+			<false/>
 			<key>DisableWatchDog</key>
 			<true/>
 			<key>DisplayDelay</key>
@@ -1412,8 +1400,6 @@
 				<string>keepsyms=1 dart=0 debug=0x100 slide=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
-				<key>nvda_drv</key>
-				<data>MQ==</data>
 				<key>prev-lang:kbd</key>
 				<data>cnUtUlU6MjUy</data>
 			</dict>
@@ -1423,6 +1409,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
 				<string>UIScale</string>
+				<string>DefaultBackgroundColor</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -1517,10 +1504,12 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
+			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
+			<key>KeyFiltering</key>
+			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
 			<key>KeyMergeThreshold</key>
@@ -1544,6 +1533,8 @@
 			<false/>
 			<key>ConsoleMode</key>
 			<string></string>
+			<key>DirectGopCacheMode</key>
+			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
@@ -1566,6 +1557,8 @@
 			<key>AppleAudio</key>
 			<false/>
 			<key>AppleBootPolicy</key>
+			<false/>
+			<key>AppleDebugLog</key>
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
