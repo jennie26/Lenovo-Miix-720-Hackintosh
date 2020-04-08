@@ -3,13 +3,13 @@
 引导及版本：OpenCore 0.57 Realese
 
 配置：
-CPU：  Intel i5 7200U
-GPU：  Intel HD620
-内存：  8G
-硬盘：  西部数据M.2 NVMe黑盘 1T
-BIOS版本：  3SEC71WW （已通过ru.efi关闭CFG Lock）
-系统信息： Windows 10 / Catalina 10.15.3
-网卡：BCM94352Z
+-CPU：  Intel i5 7200U
+-GPU：  Intel HD620
+-内存：  8G
+-硬盘：  西部数据M.2 NVMe黑盘 1T
+-BIOS版本：  3SEC71WW （已通过ru.efi关闭CFG Lock(0x3c)）
+-系统信息： Windows 10 / Catalina 10.15.3
+-网卡：BCM94352Z
 
 更改记录：
 
@@ -30,12 +30,11 @@ BIOS版本：  3SEC71WW （已通过ru.efi关闭CFG Lock）
 
 不正常：
 1. 二阶段黑屏
-2. 第一次按电源键无法进入系统，需第二次按方可进入系统
-3. 合盖睡眠仅能实现第一次，第二次无效
-4. 偶尔出现GLAN/XHCI秒醒（可解决，暂未处理）
-5. 重力感应
-6. 触摸板（仅能进行单指操作，仿佛无解）
-7. 输密码进入桌面后键盘丢失，需重新插拔。
+2. 合盖睡眠仅能实现第一次，第二次无效
+3. 偶尔出现GLAN/XHCI秒醒（可解决，暂未处理）
+4. 重力感应
+5. 触摸板（仅能进行单指操作，仿佛无解）
+6. 输密码进入桌面后键盘丢失，需重新插拔。
 
 折腾中未弄明白项：Method (_REG)影响BAT0/ADP0/LID0的(_STA)函数返回正常值。
 具体：
