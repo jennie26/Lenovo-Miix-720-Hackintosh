@@ -3,20 +3,27 @@
 引导及版本：OpenCore 0.58 Realese（更新引导）
 
 ## **配置：**
-- CPU：  Intel i5 7200U
-- GPU：  Intel HD620
-- 内存：  8G
-- 硬盘：  西部数据M.2 NVMe黑盘 1T
-- BIOS版本：  3SEC71WW （已通过ru.efi关闭CFG Lock(0x3c)设置为0）
-- 系统信息： Windows 10 / Catalina 10.15.4
-- 网卡：BCM94352Z
+| 类别 | 详情 |
+| :---: | :---- |
+| 型号 | Lenovo Miix 720 12IKB (MIIX5 Pro) |
+| CPU | Intel Core i5 7200U |
+| GPU | Intel HD620 |
+| RAM | 8G |
+| 网卡 | BCM94352Z(DW1560) |
+| 触摸板 | Synaptics具体型号未知 |
+| 触摸屏 | WACOM 5099 |
+| 声卡 | ALC269? |
+| 硬盘 | 西数黑盘SN720 1T |
+| 显示器 | 12.2‘ 2560*1440 |
+| BIOS | 3SEC71WW |
+| 系统信息 | Windows 10 / Catalina 10.15.4 |
 
 ---
 ## **更改记录：**
 
 *2020/5/9*
-1. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
-2. 
+1. 因发现被[黑果小兵](github.com/daliansky)收录，完善Readme
+2. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
 
 ---
 ## **正常：**
@@ -66,6 +73,18 @@ EFI中SSDT-OC-BATT有对以上三个设备(_STA)的改写，全部改写成返�
     }
 ```
 即使将语句改为如上内容，仍然无法显示电量/电源状态，这个地方需要求助。
+
+---
+
+## 感谢
+@Acidanthera 大神提供维护的Opencore/Lilu套件等
+@gongzhen 在10.12/10.13版本时分享的EFI，以及在tonymacx86与R神的交流，减少了我很多折腾。
+@acai66 提供的VoodooI2CHID修改避免与触摸板冲突方法
+@penghubingzhou 提供的VoodooI2C教程，以驱动触摸屏
+@RehabMan 的各项教程
+@daliansky 共享的OC-little
+@宪武 宪武大大维护的OC-little
+以及其他未列出的开发者
 
 ---
 **历史更改记录：**
