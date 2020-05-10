@@ -22,7 +22,7 @@
 ## **更改记录：**
 
 *2020/5/9*
-1. 因发现被[黑果小兵](github.com/daliansky)收录，完善Readme
+1. 因发现被[黑果小兵](https://github.com/daliansky/)收录，完善Readme
 2. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
 
 ---
@@ -77,14 +77,14 @@ EFI中SSDT-OC-BATT有对以上三个设备(_STA)的改写，全部改写成返�
 ---
 
 ## 感谢
-@Acidanthera 大神提供维护的Opencore/Lilu套件等
-@gongzhen 在10.12/10.13版本时分享的EFI，以及在tonymacx86与R神的交流，减少了我很多折腾。
-@acai66 提供的VoodooI2CHID修改避免与触摸板冲突方法
-@penghubingzhou 提供的VoodooI2C教程，以驱动触摸屏
-@RehabMan 的各项教程
-@daliansky 共享的OC-little
-@宪武 宪武大大维护的OC-little
-以及其他未列出的开发者
+- [@Acidanthera](https://github.com/acidanthera/) 大神提供维护的Opencore/Lilu套件等
+- @gongzhen 在10.12/10.13版本时分享的EFI，以及在tonymacx86与R神的交流，减少了我很多折腾。
+- [@acai66](https://github.com/acai66/) 提供的VoodooI2CHID修改避免与触摸板冲突方法
+- [@penghubingzhou](penghubingzhou.cn) 提供的VoodooI2C教程，以驱动触摸屏
+- [@RehabMan](https://github.com/RehabMan/) 的各项教程
+- [@daliansky](https://github.com/daliansky/) 共享的OC-little
+- @宪武 宪武大大维护的OC-little
+- 以及其他未列出的开发者
 
 ---
 **历史更改记录：**
