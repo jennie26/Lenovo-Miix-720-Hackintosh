@@ -54,7 +54,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-OC-BATT.aml</string>
+				<string>SSDT-OC-BATX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -454,13 +454,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change _DSM to XDSM</string>
+				<string>change _REG to XREG</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>SEVDSQ==</data>
+				<data>X1JFRw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -468,7 +468,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>SU1FSQ==</data>
+				<data>WFJFRw==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -1251,13 +1251,13 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>external</string>
+			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
 			<false/>
 			<key>TakeoffDelay</key>
-			<integer>7500</integer>
+			<integer>5000</integer>
 			<key>Timeout</key>
 			<integer>0</integer>
 		</dict>
@@ -1442,17 +1442,17 @@
 			<key>AdviseWindows</key>
 			<true/>
 			<key>MLB</key>
-			<string>C02846902GUHRPC8C</string>
+			<string></string>
 			<key>ROM</key>
-			<data>TrAuhQqh</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro14,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XPCZ7HV2N</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>158FA113-95DD-11E6-801F-C85B76850AA1</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

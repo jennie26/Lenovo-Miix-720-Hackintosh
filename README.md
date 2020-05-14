@@ -10,20 +10,20 @@
 | GPU | Intel HD620 |
 | RAM | 8G |
 | 网卡 | BCM94352Z(DW1560) |
-| 触摸板 | Synaptics具体型号未知 |
+| 触摸板 | Synaptics USBHID 具体型号未知 |
 | 触摸屏 | WACOM 5099 |
-| 声卡 | ALC269? |
+| 声卡 | ALC236 |
 | 硬盘 | 西数黑盘SN720 1T |
-| 显示器 | 12.2‘ 2560*1440 |
+| 显示器 | 12.2‘ 2880*1920 |
 | BIOS | 3SEC71WW |
 | 系统信息 | Windows 10 / Catalina 10.15.4 |
 
 ---
 ## **更改记录：**
 
-*2020/5/9*
-1. 因发现被[黑果小兵](https://github.com/daliansky/)收录，完善Readme
-2. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
+*2020/5/14*
+1. 修改`Method (_REG)`，将LIDS赋值语句调整到`If (arg0 == 0x3)`后，解决二阶段黑屏问题
+2. README关于显示器分辨率及声卡信息的修订；
 
 ---
 ## **正常：**
@@ -35,8 +35,8 @@
 6. iMessage及FaceTime
 
 ## **不正常：**
-1. 二阶段黑屏
-2. *电池供电时*合盖睡眠仅能实现第一次，第二次无效
+1. ~~二阶段黑屏~~（*5/14似乎已解决，目前重启10来次暂未重现问题*)
+2. *电池供电时*合盖睡眠仅能实现第一次，第二次无效 （远景[@sukka](skk.moe)提出该问题为无法继续触发EC Query，暂时无解决方案反馈）
 3. ~~偶尔出现GLAN/XHCI秒醒~~（已解决）
 4. 重力感应
 5. 触摸板（仅能进行单指操作，仿佛无解）
@@ -59,13 +59,13 @@ EFI中SSDT-OC-BATT有对以上三个设备(_STA)的改写，全部改写成返�
         If (Arg0 == 0x03)
         {
             Store (One, ECAV)
-            Store (One, ECOK)
+            Store (One, ECOK) //结构类似白果，也是arg0=0x3就ECOK=arg0
         }
         xxxxxxx
     }
     Method (_STA)
     {
-        If (ECOK)
+        If (ECOK) //类似白果判断
         {
             Return (0x1F)
         }
@@ -105,3 +105,7 @@ EFI中SSDT-OC-BATT有对以上三个设备(_STA)的改写，全部改写成返�
 
 *2020/5/7*
 1. 更新VoodooI2C至2.4.2；
+
+*2020/5/9*
+1. 因发现被[黑果小兵](https://github.com/daliansky/)收录，完善Readme
+2. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
