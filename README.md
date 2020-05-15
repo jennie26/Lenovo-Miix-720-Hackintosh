@@ -21,9 +21,8 @@
 ---
 ## **更改记录：**
 
-*2020/5/14*
-1. 修改`Method (_REG)`，将LIDS赋值语句调整到`If (arg0 == 0x3)`后，解决二阶段黑屏问题
-2. README关于显示器分辨率及声卡信息的修订；
+*2020/5/15*
+1. boot-args增加`brcmfx-country=NZL`使WIFI支持更多频段（之前未发现不能识别WIFI，今天发现了就增加上）
 
 ---
 ## **正常：**
@@ -109,3 +108,7 @@ EFI中SSDT-OC-BATT有对以上三个设备(_STA)的改写，全部改写成返�
 *2020/5/9*
 1. 因发现被[黑果小兵](https://github.com/daliansky/)收录，完善Readme
 2. 合并仿冒及无需更名SSDT，简化config-ACPI-ADD；
+
+*2020/5/14*
+1. 修改`Method (_REG)`，将LIDS赋值语句调整到`If (arg0 == 0x3)`后，解决二阶段黑屏问题
+2. README关于显示器分辨率及声卡信息的修订；
