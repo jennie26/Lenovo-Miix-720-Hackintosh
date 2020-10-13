@@ -26,3 +26,14 @@
 *2020/5/14*
 1. 修改`Method (_REG)`，将LIDS赋值语句调整到`If (arg0 == 0x3)`后，解决二阶段黑屏问题
 2. README关于显示器分辨率及声卡信息的修订；
+
+*2020/5/15* **V2.0发布**
+1. boot-args增加`brcmfx-country=NZL`使WIFI支持更多频段（之前未发现不能识别WIFI，今天发现了就增加上）
+2. 剩下的2/4-6问题目前看我是解决不了了，但应该不太影响正常使用。所以，姑且以该版本发布V2.0，后续将以常规维护为主。
+3. 更改日志独立成文档[Changelog.md](https://github.com/jennie26/Lenovo-Miix-720-Hackintosh/blob/master/Changelog.md)
+
+*2020/10/13*
+1. 更新OC版本至0.62正式版
+2. 更新lilu套件至最新正式版
+3. 更新Big Sur支持
+4. 暂删除voodooI2C的触屏支持
